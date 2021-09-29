@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pattaya&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="animation">
+        <a href="https://github.com/islom-jummaev" target="_blank"> <button type="button" class="btn"><i class="fab fa-github"></i> GitHub</button></a>
+         <h2 class="heading">StayHome </h2>
+         <div class="sun">
+             <span class="tooltip">Click for Dark</span>
+         </div>
+         <div class="bg">
+             <audio class="audio" controls>
+                 <source src="./public/Images/siren.mp3">
+             </audio>
+             <div class="car">
+                 <img src="./public/Images/police_car.gif" class="car1" alt="">
+                 <img src="./public/Images/police_car.gif" class="car2" alt="">
+                 <img src="./public/Images/heli1.png" class="helic" alt="">
+                 <img src="./public/Images/ambucar.png" style="height: 100px; width:80px;" class="car3" alt="">
+              
+             </div>
+         </div>
+     </div>
+ 
+ 
+ 
+     <!-- javascript -->
+ 
+     <script>
+         const sun = document.querySelector('.sun');
+         const body = document.querySelector('body');
+         sun.onclick = function(){
+             body.classList.toggle('dark')
+         }
+     </script>
+</body>
+</html>
